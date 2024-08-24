@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HP\\OneDrive\\Documents\\GitHub\\Code-Cadets\\backend\\CodeCadetsAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{45E6BB32-2801-4CE9-931A-61BD53B1840B}|CodeCadetsAPI\\CodeCadetsAPI.csproj|c:\\users\\hp\\onedrive\\documents\\github\\code-cadets\\backend\\codecadetsapi\\codecadetsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45E6BB32-2801-4CE9-931A-61BD53B1840B}|CodeCadetsAPI\\CodeCadetsAPI.csproj|solutionrelative:codecadetsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\GitHub\\Code-Cadets\\backend\\CodeCadetsAPI\\CodeCadetsAPI\\Program.cs",
+              "RelativeDocumentMoniker": "CodeCadetsAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\GitHub\\Code-Cadets\\backend\\CodeCadetsAPI\\CodeCadetsAPI\\Program.cs",
+              "RelativeToolTip": "CodeCadetsAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T15:39:14.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
