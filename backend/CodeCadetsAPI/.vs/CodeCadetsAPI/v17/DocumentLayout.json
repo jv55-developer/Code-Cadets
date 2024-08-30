@@ -3,6 +3,50 @@
   "WorkspaceRootPath": "C:\\Users\\HP\\OneDrive\\Documents\\GitHub\\Code-Cadets\\backend\\CodeCadetsAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\HP\\OneDrive\\Documents\\GitHub\\Code-Cadets\\backend\\CodeCadetsAPI\\CodeCadetsAPI\\Migrations\\20240830161842_CodeCadetChanges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CodeCadetsAPI\\Migrations\\20240830161842_CodeCadetChanges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45E6BB32-2801-4CE9-931A-61BD53B1840B}|CodeCadetsAPI\\CodeCadetsAPI.csproj|c:\\users\\hp\\onedrive\\documents\\github\\code-cadets\\backend\\codecadetsapi\\codecadetsapi\\data\\dashboarddatacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45E6BB32-2801-4CE9-931A-61BD53B1840B}|CodeCadetsAPI\\CodeCadetsAPI.csproj|solutionrelative:codecadetsapi\\data\\dashboarddatacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\HP\\OneDrive\\Documents\\GitHub\\Code-Cadets\\backend\\CodeCadetsAPI\\CodeCadetsAPI\\Migrations\\20240830161240_CodeCadetInit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CodeCadetsAPI\\Migrations\\20240830161240_CodeCadetInit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45E6BB32-2801-4CE9-931A-61BD53B1840B}|CodeCadetsAPI\\CodeCadetsAPI.csproj|c:\\users\\hp\\onedrive\\documents\\github\\code-cadets\\backend\\codecadetsapi\\codecadetsapi\\models\\projectmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45E6BB32-2801-4CE9-931A-61BD53B1840B}|CodeCadetsAPI\\CodeCadetsAPI.csproj|solutionrelative:codecadetsapi\\models\\projectmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45E6BB32-2801-4CE9-931A-61BD53B1840B}|CodeCadetsAPI\\CodeCadetsAPI.csproj|c:\\users\\hp\\onedrive\\documents\\github\\code-cadets\\backend\\codecadetsapi\\codecadetsapi\\jwt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45E6BB32-2801-4CE9-931A-61BD53B1840B}|CodeCadetsAPI\\CodeCadetsAPI.csproj|solutionrelative:codecadetsapi\\jwt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45E6BB32-2801-4CE9-931A-61BD53B1840B}|CodeCadetsAPI\\CodeCadetsAPI.csproj|c:\\users\\hp\\onedrive\\documents\\github\\code-cadets\\backend\\codecadetsapi\\codecadetsapi\\models\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45E6BB32-2801-4CE9-931A-61BD53B1840B}|CodeCadetsAPI\\CodeCadetsAPI.csproj|solutionrelative:codecadetsapi\\models\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45E6BB32-2801-4CE9-931A-61BD53B1840B}|CodeCadetsAPI\\CodeCadetsAPI.csproj|c:\\users\\hp\\onedrive\\documents\\github\\code-cadets\\backend\\codecadetsapi\\codecadetsapi\\models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45E6BB32-2801-4CE9-931A-61BD53B1840B}|CodeCadetsAPI\\CodeCadetsAPI.csproj|solutionrelative:codecadetsapi\\models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45E6BB32-2801-4CE9-931A-61BD53B1840B}|CodeCadetsAPI\\CodeCadetsAPI.csproj|c:\\users\\hp\\onedrive\\documents\\github\\code-cadets\\backend\\codecadetsapi\\codecadetsapi\\models\\work.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45E6BB32-2801-4CE9-931A-61BD53B1840B}|CodeCadetsAPI\\CodeCadetsAPI.csproj|solutionrelative:codecadetsapi\\models\\work.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45E6BB32-2801-4CE9-931A-61BD53B1840B}|CodeCadetsAPI\\CodeCadetsAPI.csproj|c:\\users\\hp\\onedrive\\documents\\github\\code-cadets\\backend\\codecadetsapi\\codecadetsapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45E6BB32-2801-4CE9-931A-61BD53B1840B}|CodeCadetsAPI\\CodeCadetsAPI.csproj|solutionrelative:codecadetsapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45E6BB32-2801-4CE9-931A-61BD53B1840B}|CodeCadetsAPI\\CodeCadetsAPI.csproj|c:\\users\\hp\\onedrive\\documents\\github\\code-cadets\\backend\\codecadetsapi\\codecadetsapi\\codecadetsapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{45E6BB32-2801-4CE9-931A-61BD53B1840B}|CodeCadetsAPI\\CodeCadetsAPI.csproj|solutionrelative:codecadetsapi\\codecadetsapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45E6BB32-2801-4CE9-931A-61BD53B1840B}|CodeCadetsAPI\\CodeCadetsAPI.csproj|c:\\users\\hp\\onedrive\\documents\\github\\code-cadets\\backend\\codecadetsapi\\codecadetsapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{45E6BB32-2801-4CE9-931A-61BD53B1840B}|CodeCadetsAPI\\CodeCadetsAPI.csproj|solutionrelative:codecadetsapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{45E6BB32-2801-4CE9-931A-61BD53B1840B}|CodeCadetsAPI\\CodeCadetsAPI.csproj|c:\\users\\hp\\onedrive\\documents\\github\\code-cadets\\backend\\codecadetsapi\\codecadetsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45E6BB32-2801-4CE9-931A-61BD53B1840B}|CodeCadetsAPI\\CodeCadetsAPI.csproj|solutionrelative:codecadetsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,12 +63,155 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "20240830161842_CodeCadetChanges.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\GitHub\\Code-Cadets\\backend\\CodeCadetsAPI\\CodeCadetsAPI\\Migrations\\20240830161842_CodeCadetChanges.cs",
+              "RelativeDocumentMoniker": "CodeCadetsAPI\\Migrations\\20240830161842_CodeCadetChanges.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\GitHub\\Code-Cadets\\backend\\CodeCadetsAPI\\CodeCadetsAPI\\Migrations\\20240830161842_CodeCadetChanges.cs",
+              "RelativeToolTip": "CodeCadetsAPI\\Migrations\\20240830161842_CodeCadetChanges.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T16:18:43.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20240830161240_CodeCadetInit.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\GitHub\\Code-Cadets\\backend\\CodeCadetsAPI\\CodeCadetsAPI\\Migrations\\20240830161240_CodeCadetInit.cs",
+              "RelativeDocumentMoniker": "CodeCadetsAPI\\Migrations\\20240830161240_CodeCadetInit.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\GitHub\\Code-Cadets\\backend\\CodeCadetsAPI\\CodeCadetsAPI\\Migrations\\20240830161240_CodeCadetInit.cs",
+              "RelativeToolTip": "CodeCadetsAPI\\Migrations\\20240830161240_CodeCadetInit.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAQwDwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T16:12:40.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "JWT.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\GitHub\\Code-Cadets\\backend\\CodeCadetsAPI\\CodeCadetsAPI\\JWT.cs",
+              "RelativeDocumentMoniker": "CodeCadetsAPI\\JWT.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\GitHub\\Code-Cadets\\backend\\CodeCadetsAPI\\CodeCadetsAPI\\JWT.cs",
+              "RelativeToolTip": "CodeCadetsAPI\\JWT.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAkwBYAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T16:07:26.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProjectManagement.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\GitHub\\Code-Cadets\\backend\\CodeCadetsAPI\\CodeCadetsAPI\\Models\\ProjectManagement.cs",
+              "RelativeDocumentMoniker": "CodeCadetsAPI\\Models\\ProjectManagement.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\GitHub\\Code-Cadets\\backend\\CodeCadetsAPI\\CodeCadetsAPI\\Models\\ProjectManagement.cs",
+              "RelativeToolTip": "CodeCadetsAPI\\Models\\ProjectManagement.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T15:46:14.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Project.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\GitHub\\Code-Cadets\\backend\\CodeCadetsAPI\\CodeCadetsAPI\\Models\\Project.cs",
+              "RelativeDocumentMoniker": "CodeCadetsAPI\\Models\\Project.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\GitHub\\Code-Cadets\\backend\\CodeCadetsAPI\\CodeCadetsAPI\\Models\\Project.cs",
+              "RelativeToolTip": "CodeCadetsAPI\\Models\\Project.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T15:42:38.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Log.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\GitHub\\Code-Cadets\\backend\\CodeCadetsAPI\\CodeCadetsAPI\\Models\\Log.cs",
+              "RelativeDocumentMoniker": "CodeCadetsAPI\\Models\\Log.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\GitHub\\Code-Cadets\\backend\\CodeCadetsAPI\\CodeCadetsAPI\\Models\\Log.cs",
+              "RelativeToolTip": "CodeCadetsAPI\\Models\\Log.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T15:10:35.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DashboardDataContext.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\GitHub\\Code-Cadets\\backend\\CodeCadetsAPI\\CodeCadetsAPI\\Data\\DashboardDataContext.cs",
+              "RelativeDocumentMoniker": "CodeCadetsAPI\\Data\\DashboardDataContext.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\GitHub\\Code-Cadets\\backend\\CodeCadetsAPI\\CodeCadetsAPI\\Data\\DashboardDataContext.cs",
+              "RelativeToolTip": "CodeCadetsAPI\\Data\\DashboardDataContext.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAgwB4AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T14:50:07.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Work.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\GitHub\\Code-Cadets\\backend\\CodeCadetsAPI\\CodeCadetsAPI\\Models\\Work.cs",
+              "RelativeDocumentMoniker": "CodeCadetsAPI\\Models\\Work.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\GitHub\\Code-Cadets\\backend\\CodeCadetsAPI\\CodeCadetsAPI\\Models\\Work.cs",
+              "RelativeToolTip": "CodeCadetsAPI\\Models\\Work.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T14:49:13.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\GitHub\\Code-Cadets\\backend\\CodeCadetsAPI\\CodeCadetsAPI\\Models\\User.cs",
+              "RelativeDocumentMoniker": "CodeCadetsAPI\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\GitHub\\Code-Cadets\\backend\\CodeCadetsAPI\\CodeCadetsAPI\\Models\\User.cs",
+              "RelativeToolTip": "CodeCadetsAPI\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T14:47:01.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CodeCadetsAPI.csproj",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\GitHub\\Code-Cadets\\backend\\CodeCadetsAPI\\CodeCadetsAPI\\CodeCadetsAPI.csproj",
+              "RelativeDocumentMoniker": "CodeCadetsAPI\\CodeCadetsAPI.csproj",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\GitHub\\Code-Cadets\\backend\\CodeCadetsAPI\\CodeCadetsAPI\\CodeCadetsAPI.csproj",
+              "RelativeToolTip": "CodeCadetsAPI\\CodeCadetsAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-26T18:19:34.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\GitHub\\Code-Cadets\\backend\\CodeCadetsAPI\\CodeCadetsAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "CodeCadetsAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\GitHub\\Code-Cadets\\backend\\CodeCadetsAPI\\CodeCadetsAPI\\appsettings.json",
+              "RelativeToolTip": "CodeCadetsAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-26T17:48:12.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Documents\\GitHub\\Code-Cadets\\backend\\CodeCadetsAPI\\CodeCadetsAPI\\Program.cs",
               "RelativeDocumentMoniker": "CodeCadetsAPI\\Program.cs",
               "ToolTip": "C:\\Users\\HP\\OneDrive\\Documents\\GitHub\\Code-Cadets\\backend\\CodeCadetsAPI\\CodeCadetsAPI\\Program.cs",
               "RelativeToolTip": "CodeCadetsAPI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-24T15:39:14.046Z",
               "EditorCaption": ""
