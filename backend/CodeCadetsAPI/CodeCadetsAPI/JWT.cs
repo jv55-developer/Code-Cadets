@@ -1,5 +1,6 @@
 ﻿using CodeCadetsAPI.Models;
 using Microsoft.AspNetCore.Authorization.Infrastructure;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -20,7 +21,10 @@ namespace CodeCadetsAPI
         {
             var claim = new List<Claim>()
             {
-                new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString())
+                new(ClaimTypes.Name, user.Email),
+                new(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                new(JwtRegisteredClaimNames.Name, user.Email),
+                new(ClaimTypes.Role, user.Role),
             };
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings["Key"]));

@@ -3,6 +3,7 @@ using System;
 using CodeCadetsAPI.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CodeCadetsAPI.Migrations
 {
     [DbContext(typeof(DashboardDataContext))]
-    partial class DashboardDataContextModelSnapshot : ModelSnapshot
+    [Migration("20240830181027_CodeCadetForeignKeys")]
+    partial class CodeCadetForeignKeys
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.8");
@@ -39,10 +42,6 @@ namespace CodeCadetsAPI.Migrations
                         .HasColumnType("INTEGER");
 
                     b.HasKey("LogId");
-
-                    b.HasIndex("UserID");
-
-                    b.HasIndex("WorkID");
 
                     b.ToTable("Logs");
                 });
@@ -80,18 +79,14 @@ namespace CodeCadetsAPI.Migrations
                     b.Property<int>("UserId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("ProjectId")
-                        .HasColumnType("INTEGER");
-
                     b.Property<string>("ProjectRole")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<int>("WorkId")
+                        .HasColumnType("INTEGER");
+
                     b.HasKey("LogId", "UserId");
-
-                    b.HasIndex("ProjectId");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("ProjectManagement");
                 });
@@ -156,52 +151,6 @@ namespace CodeCadetsAPI.Migrations
                     b.HasKey("WorkId");
 
                     b.ToTable("Works");
-                });
-
-            modelBuilder.Entity("CodeCadetsAPI.Models.Log", b =>
-                {
-                    b.HasOne("CodeCadetsAPI.Models.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("CodeCadetsAPI.Models.Work", "Work")
-                        .WithMany()
-                        .HasForeignKey("WorkID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
-
-                    b.Navigation("Work");
-                });
-
-            modelBuilder.Entity("CodeCadetsAPI.Models.ProjectManagement", b =>
-                {
-                    b.HasOne("CodeCadetsAPI.Models.Log", "Log")
-                        .WithMany()
-                        .HasForeignKey("LogId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("CodeCadetsAPI.Models.Project", "Project")
-                        .WithMany()
-                        .HasForeignKey("ProjectId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("CodeCadetsAPI.Models.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Log");
-
-                    b.Navigation("Project");
-
-                    b.Navigation("User");
                 });
 #pragma warning restore 612, 618
         }

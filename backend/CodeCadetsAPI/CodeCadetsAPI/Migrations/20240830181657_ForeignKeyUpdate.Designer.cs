@@ -3,6 +3,7 @@ using System;
 using CodeCadetsAPI.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CodeCadetsAPI.Migrations
 {
     [DbContext(typeof(DashboardDataContext))]
-    partial class DashboardDataContextModelSnapshot : ModelSnapshot
+    [Migration("20240830181657_ForeignKeyUpdate")]
+    partial class ForeignKeyUpdate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.8");
@@ -80,18 +83,18 @@ namespace CodeCadetsAPI.Migrations
                     b.Property<int>("UserId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("ProjectId")
-                        .HasColumnType("INTEGER");
-
                     b.Property<string>("ProjectRole")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<int>("WorkId")
+                        .HasColumnType("INTEGER");
+
                     b.HasKey("LogId", "UserId");
 
-                    b.HasIndex("ProjectId");
-
                     b.HasIndex("UserId");
+
+                    b.HasIndex("WorkId");
 
                     b.ToTable("ProjectManagement");
                 });
@@ -185,23 +188,23 @@ namespace CodeCadetsAPI.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("CodeCadetsAPI.Models.Project", "Project")
-                        .WithMany()
-                        .HasForeignKey("ProjectId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("CodeCadetsAPI.Models.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("CodeCadetsAPI.Models.Work", "Work")
+                        .WithMany()
+                        .HasForeignKey("WorkId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Log");
 
-                    b.Navigation("Project");
-
                     b.Navigation("User");
+
+                    b.Navigation("Work");
                 });
 #pragma warning restore 612, 618
         }

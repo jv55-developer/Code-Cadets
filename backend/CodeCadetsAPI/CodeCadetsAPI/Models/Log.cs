@@ -8,12 +8,16 @@ namespace CodeCadetsAPI.Models
     {
         [Key]
         public int LogId { get; set; }
-        [ForeignKey("WorkId")]
+        [ForeignKey(nameof(Work))]
         [Required]
         public int WorkID { get; set; }
-        [ForeignKey("UserId")]
+
+        public Work Work { get; set; }
+
+        [ForeignKey(nameof(User))]
         [Required]
         public int UserID { get; set; }
+        public User User { get; set; }
         [Required]
         public DateTime Start {  get; set; }
         [Required]
