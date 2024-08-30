@@ -22,8 +22,6 @@ namespace CodeCadetsAPI.Data
             builder.Entity<User>()
                .HasIndex(e => e.PhoneNumber)
                .IsUnique();
-                
-
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

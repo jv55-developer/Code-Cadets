@@ -9,17 +9,19 @@ namespace CodeCadetsAPI.Models
     [PrimaryKey(nameof(LogId), nameof(UserId))]
     public class ProjectManagement
     {
-        [ForeignKey("LogId")]
+        [ForeignKey(nameof(Log))]
         [Required]
-        
         public int LogId { get; set; }
-        [ForeignKey("UserID")]
+        public Log Log { get; set; }
+        [ForeignKey(nameof(User))]
         [Required]
         public int UserId { get; set; }
+        public User User { get; set; }
         [Required]
         public string ProjectRole {  get; set; } = string.Empty;
-        [ForeignKey("WorkID")]
+        [ForeignKey(nameof(Project))]
         [Required]
-        public int WorkId { get; set; }
+        public int ProjectId { get; set; }
+        public Project Project { get; set; }
     }
 }
