@@ -7,10 +7,11 @@ import { RouterModule } from '@angular/router';
   imports: [RouterModule],
   template: `<main>
     <header>
-      <ul>
+      <ul class="nav">
         <li><a [routerLink]="['/']">Home</a></li>
         <li><a [routerLink]="['/track_hours']">Track Hours</a></li>
         <li><a [routerLink]="['/all_users']">All Users</a></li>
+        <li><a [routerLink]="['/all_hours']">All Hours</a></li>
       </ul>
     </header>
     <section>

@@ -1,0 +1,24 @@
+ul.nav {
+  list-style-type: none; /* Remove the default bullet points */
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Ensure the list items stay on one line */
+  background-color: #f3f3f3; /* Light background color */
+}
+
+ul.nav li {
+  float: left; /* Makes the list items align horizontally */
+}
+
+ul.nav li a {
+  display: block;
+  color: #333; /* Darker text color */
+  text-align: center;
+  padding: 14px 16px; /* Padding for clickable area */
+  text-decoration: none; /* Remove underline */
+}
+
+ul.nav li a:hover {
+  background-color: #ddd; /* Light grey background on hover */
+  color: #000; /* Darker text on hover */
+}
