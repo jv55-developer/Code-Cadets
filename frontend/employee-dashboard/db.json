@@ -31,6 +31,22 @@
       "date": "2024-08-31",
       "time": 5,
       "date_entered": "2024-08-31T13:08:58.473Z"
+    },
+    {
+      "id": "4",
+      "user_id": "1",
+      "activity": "build api",
+      "date": "2024-08-25",
+      "time": 12,
+      "date_entered": "2024-08-31T16:19:14.217Z"
+    },
+    {
+      "id": "5",
+      "user_id": "1",
+      "activity": "",
+      "date": "",
+      "time": "",
+      "date_entered": "2024-08-31T22:47:44.380Z"
     }
   ],
   "users": [
