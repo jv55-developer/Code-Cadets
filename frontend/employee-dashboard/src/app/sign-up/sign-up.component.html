@@ -1,0 +1,28 @@
+<div class="auth-container">
+    <div class="auth-card">
+      <h2>Create Account</h2>
+      <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+        <div class="input-group">
+          <input type="text" formControlName="username" placeholder="Full name" required />
+        </div>
+        <div class="input-group">
+          <input type="email" formControlName="email" placeholder="Email" required />
+        </div>
+        <div class="input-group">
+          <input type="password" formControlName="password" placeholder="Password" required />
+        </div>
+        <button type="submit" class="auth-button">Sign up</button>
+      </form>
+      <div class="social-login">
+        <p>or</p>
+        <div class="social-icons">
+          <a href="#"><img src="assets/facebook-icon.png" alt="Facebook" /></a>
+          <a href="#"><img src="assets/google-icon.png" alt="Google" /></a>
+        </div>
+      </div>
+      <p class="auth-footer">
+        Already have an account? <a routerLink="/login">Log in</a>
+      </p>
+    </div>
+  </div>
+  
