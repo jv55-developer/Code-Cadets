@@ -1,0 +1,14 @@
+table {
+  width: 100%;
+  border-collapse: collapse; /* Ensures the borders are collapsed into a single border */
+}
+
+th, td {
+  border: 1px solid black; /* Adds borders to each cell */
+  padding: 8px; /* Adds some padding for better readability */
+  text-align: left; /* Aligns text to the left */
+}
+
+tr {
+  border: 1px solid black; /* Adds a border around each row */
+}

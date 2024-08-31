@@ -1,0 +1,50 @@
+{
+  "work": [
+    {
+      "id": "0",
+      "user_id": "1",
+      "activity": "Paying invoices",
+      "date": "2024/08/29",
+      "time": "2",
+      "date_entered": "2020-04-09 10:56:06"
+    },
+    {
+      "id": "1",
+      "user_id": "1",
+      "activity": "Meeting with clients",
+      "date": "2024/08/24",
+      "time": "3",
+      "date_entered": "2020-04-09 10:56:06"
+    },
+    {
+      "id": "2",
+      "user_id": "2",
+      "activity": "Paying invoices",
+      "date": "2024/08/21",
+      "time": "5",
+      "date_entered": "2020-04-09 10:56:06"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "John",
+      "surname": "Doe",
+      "email": "john@example.com",
+      "cell": "1234567890",
+      "role": "admin",
+      "birthday": "1990-01-01",
+      "date_created": "2024-08-30"
+    },
+    {
+      "id": 2,
+      "name": "Jane",
+      "surname": "Doe",
+      "email": "jane@example.com",
+      "cell": "0987654321",
+      "role": "user",
+      "birthday": "1992-02-02",
+      "date_created": "2024-08-30"
+    }
+  ]
+}

@@ -9,15 +9,15 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
     <article>
       <section>
         <h2>Log Hours</h2>
-        <form>
+        <form [formGroup]="trackForm">
           <label for="activity">Activity</label>
           <input id="activity" type="text" formControlName="activity" />
 
           <label for="date">Date</label>
           <input id="date" type="date" formControlName="date" />
 
-          <label for="time">Time</label>
-          <input id="time" type="time" formControlName="time" />
+          <label for="time">Time (in hours)</label>
+          <input id="time" type="number" formControlName="time" />
 
           <button type="submit">Submit</button>
         </form>
@@ -27,9 +27,11 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
   styleUrl: './track-hours.component.css',
 })
 export class TrackHoursComponent {
-  applyForm = new FormGroup({
+  trackForm = new FormGroup({
     activity: new FormControl(''),
     date: new FormControl(''),
     time: new FormControl(''),
   });
+
+  
 }
