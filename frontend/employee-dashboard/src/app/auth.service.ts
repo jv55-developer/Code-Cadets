@@ -9,6 +9,7 @@ import { BehaviorSubject } from 'rxjs';
 export class AuthService {
   private apiURL = 'http://localhost:3000/api'; // Backend API URL
   private loggedIn = new BehaviorSubject<boolean>(false);
+  sign: any;
 
   constructor(private http: HttpClient, private router: Router) { }
 
