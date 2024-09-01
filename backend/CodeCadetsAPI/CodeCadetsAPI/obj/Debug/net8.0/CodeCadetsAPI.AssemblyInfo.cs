@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CodeCadetsAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b8ad0582cd55352306fd2415bc88818cb3e934b9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a73a7356528776dd5c0366d277624ff03e7f7baf")]
 [assembly: System.Reflection.AssemblyProductAttribute("CodeCadetsAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CodeCadetsAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

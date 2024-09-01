@@ -6,6 +6,7 @@ namespace CodeCadetsAPI.Data
 {
     public class DashboardDataContext : DbContext
     {
+        public DashboardDataContext(DbContextOptions<DashboardDataContext> options) : base(options) { }
         public DbSet<User> Users { get; set; }
         public DbSet<Work> Works { get; set; }
         public DbSet<Log> Logs { get; set; }
@@ -26,7 +27,7 @@ namespace CodeCadetsAPI.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite("DataSource=CodeCadets.db");
+            optionsBuilder.UseSqlite("Data Source=CodeCadets.db");
         }
     }
 }
