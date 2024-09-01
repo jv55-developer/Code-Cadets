@@ -1,0 +1,20 @@
+<div class="hours-container">
+    <h2>Your Logged Hours</h2>
+    <table class="hours-table">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Hours Worked</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let hour of hours">
+          <td>{{ hour.date }}</td>
+          <td>{{ hour.hoursWorked }}</td>
+          <td>{{ hour.description }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

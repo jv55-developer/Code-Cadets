@@ -1,0 +1,18 @@
+.hours-container {
+    margin: 20px;
+  }
+  
+  .hours-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .hours-table th, .hours-table td {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+  }
+  
+  .hours-table th {
+    background-color: #f4f4f4;
+  }
+  
