@@ -21,21 +21,17 @@ import { UsersService } from '../users.service';
         <thead>
           <tr>
             <th>Name</th>
-            <th>Surname</th>
             <th>Email</th>
             <th>Cell</th>
             <th>Role</th>
-            <th>Birthday</th>
           </tr>
         </thead>
         <tbody>
           <tr *ngFor="let userEntry of filteredUserEntry">
-            <td>{{ userEntry.name }}</td>
-            <td>{{ userEntry.surname }}</td>
-            <td>{{ userEntry.email }}</td>
-            <td>{{ userEntry.cell }}</td>
-            <td>{{ userEntry.role }}</td>
-            <td>{{ userEntry.birthday }}</td>
+            <td>{{ userEntry.Name }}</td>
+            <td>{{ userEntry.Email }}</td>
+            <td>{{ userEntry.PhoneNumber }}</td>
+            <td>{{ userEntry.Role }}</td>
           </tr>
         </tbody>
       </table>
@@ -60,7 +56,7 @@ export class UsersComponent {
       this.filteredUserEntry = this.userEntryList;
     } else {
       this.filteredUserEntry = this.userEntryList.filter((userEntry) =>
-        userEntry?.name.toLowerCase().includes(text.toLowerCase())
+        userEntry?.Name.toLowerCase().includes(text.toLowerCase())
       );
     }
   }

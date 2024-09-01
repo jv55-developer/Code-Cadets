@@ -14,9 +14,6 @@ import { WorkService } from '../work.service';
           <label for="activity">Activity</label>
           <input id="activity" type="text" formControlName="activity" />
 
-          <label for="date">Date</label>
-          <input id="date" type="date" formControlName="date" />
-
           <label for="time">Time (in hours)</label>
           <input id="time" type="number" formControlName="time" />
 
@@ -39,12 +36,10 @@ export class TrackHoursComponent {
 
   async onSubmit() {
     const newWorkEntry = {
-      id: await this.generateId(),
-      user_id: "1",
-      activity: this.trackForm.value.activity,
-      date: this.trackForm.value.date,
-      time: this.trackForm.value.time,
-      date_entered: new Date().toISOString()
+      WorkId: await this.generateId(),
+      Activity: this.trackForm.value.activity,
+      HoursWorked: this.trackForm.value.time,
+      UserId: 1
     }
 
     this.workService.addHours(newWorkEntry).then(data => {
@@ -54,7 +49,7 @@ export class TrackHoursComponent {
 
   async generateId(): Promise<string> {
     const workEntries = await this.workService.getHours();
-    const currentMaxId = Math.max(...workEntries.map(entry => parseInt(entry.id.toString(), 10)), 0);
+    const currentMaxId = Math.max(...workEntries.map(entry => parseInt(entry.WorkId.toString(), 10)), 0);
     return (currentMaxId + 1).toString();
   }
 }

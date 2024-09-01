@@ -7,7 +7,8 @@ import { ChartComponent } from "../chart/chart.component";
   standalone: true,
   imports: [CommonModule, ChartComponent],
   template: `
-    <app-chart></app-chart>
+    <!-- <app-chart></app-chart> -->
+  <p>Chart Goes here</p>
   `,
   styleUrl: './home.component.css',
 })

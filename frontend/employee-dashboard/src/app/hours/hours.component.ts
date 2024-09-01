@@ -23,15 +23,13 @@ import { WorkService } from '../work.service';
             <th>User ID</th>
             <th>Activity</th>
             <th>Date</th>
-            <th>Hours</th>
           </tr>
         </thead>
         <tbody>
           <tr *ngFor="let workEntry of filteredWorkEntry">
-            <td>{{ workEntry.user_id }}</td>
-            <td>{{ workEntry.activity }}</td>
-            <td>{{ workEntry.date }}</td>
-            <td>{{ workEntry.time }}</td>
+            <td>{{ workEntry.UserId }}</td>
+            <td>{{ workEntry.Activity }}</td>
+            <td>{{ workEntry.HoursWorked }}</td>
           </tr>
         </tbody>
       </table>
@@ -56,7 +54,7 @@ export class HoursComponent {
       this.filteredWorkEntry = this.workEntryList;
     } else {
       this.filteredWorkEntry = this.workEntryList.filter((workEntry) =>
-        workEntry?.activity.toLowerCase().includes(text.toLowerCase())
+        workEntry?.Activity.toLowerCase().includes(text.toLowerCase())
       );
     }
   }
