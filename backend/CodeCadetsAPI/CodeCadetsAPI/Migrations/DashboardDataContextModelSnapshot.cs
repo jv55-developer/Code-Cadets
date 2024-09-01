@@ -17,85 +17,6 @@ namespace CodeCadetsAPI.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.8");
 
-            modelBuilder.Entity("CodeCadetsAPI.Models.Log", b =>
-                {
-                    b.Property<int>("LogId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<DateTime>("End")
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("HoursWorked")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<DateTime>("Start")
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("UserID")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("WorkID")
-                        .HasColumnType("INTEGER");
-
-                    b.HasKey("LogId");
-
-                    b.HasIndex("UserID");
-
-                    b.HasIndex("WorkID");
-
-                    b.ToTable("Logs");
-                });
-
-            modelBuilder.Entity("CodeCadetsAPI.Models.Project", b =>
-                {
-                    b.Property<int>("ProjectId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<double>("Budget")
-                        .HasColumnType("REAL");
-
-                    b.Property<DateTime>("CompletionDate")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("ProjectId");
-
-                    b.ToTable("Projects");
-                });
-
-            modelBuilder.Entity("CodeCadetsAPI.Models.ProjectManagement", b =>
-                {
-                    b.Property<int>("LogId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("ProjectId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("ProjectRole")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("LogId", "UserId");
-
-                    b.HasIndex("ProjectId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("ProjectManagement");
-                });
-
             modelBuilder.Entity("CodeCadetsAPI.Models.User", b =>
                 {
                     b.Property<int>("UserId")
@@ -146,60 +67,26 @@ namespace CodeCadetsAPI.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
+                    b.Property<int>("HoursWorked")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<int>("Duration")
+                    b.Property<int>("UserId")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("WorkId");
 
+                    b.HasIndex("UserId");
+
                     b.ToTable("Works");
                 });
 
-            modelBuilder.Entity("CodeCadetsAPI.Models.Log", b =>
+            modelBuilder.Entity("CodeCadetsAPI.Models.Work", b =>
                 {
-                    b.HasOne("CodeCadetsAPI.Models.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("CodeCadetsAPI.Models.Work", "Work")
-                        .WithMany()
-                        .HasForeignKey("WorkID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
-
-                    b.Navigation("Work");
-                });
-
-            modelBuilder.Entity("CodeCadetsAPI.Models.ProjectManagement", b =>
-                {
-                    b.HasOne("CodeCadetsAPI.Models.Log", "Log")
-                        .WithMany()
-                        .HasForeignKey("LogId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("CodeCadetsAPI.Models.Project", "Project")
-                        .WithMany()
-                        .HasForeignKey("ProjectId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("CodeCadetsAPI.Models.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Log");
-
-                    b.Navigation("Project");
 
                     b.Navigation("User");
                 });
