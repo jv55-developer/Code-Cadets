@@ -1,0 +1,54 @@
+[
+  {
+    "ContainingType": "CodeCadetsAPI.Endpoints.UsersController",
+    "Method": "All",
+    "RelativePath": "Users/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CodeCadetsAPI.Endpoints.UsersController",
+    "Method": "Login",
+    "RelativePath": "Users/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "person",
+        "Type": "Person",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CodeCadetsAPI.Endpoints.UsersController",
+    "Method": "SignUp",
+    "RelativePath": "Users/signup",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reg",
+        "Type": "CodeCadetsAPI.Endpoints.Register",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CodeCadetsAPI.Endpoints.WorksController",
+    "Method": "All",
+    "RelativePath": "work/Works",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
