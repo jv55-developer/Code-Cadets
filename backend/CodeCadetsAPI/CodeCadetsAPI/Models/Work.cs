@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CodeCadetsAPI.Models
 {
@@ -7,10 +8,13 @@ namespace CodeCadetsAPI.Models
         [Key]
         public int WorkId { get; set; }
         [Required]
-        public string Activity {  get; set; }
+        public string Activity {  get; set; } = string.Empty;
         [Required]
-        public string Description { get; set; }
+        public int HoursWorked { get; set; }
+        
+        [ForeignKey(nameof(User))]
         [Required]
-        public int Duration { get; set; }
+        public int UserId { get; set; }
+        public User User { get; set; }
     }
 }
