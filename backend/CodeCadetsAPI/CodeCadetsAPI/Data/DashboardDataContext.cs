@@ -9,9 +9,6 @@ namespace CodeCadetsAPI.Data
         public DashboardDataContext(DbContextOptions<DashboardDataContext> options) : base(options) { }
         public DbSet<User> Users { get; set; }
         public DbSet<Work> Works { get; set; }
-        public DbSet<Log> Logs { get; set; }
-        public DbSet<Project> Projects { get; set; }
-        public DbSet<ProjectManagement> ProjectManagement { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

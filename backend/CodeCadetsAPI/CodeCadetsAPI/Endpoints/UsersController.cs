@@ -9,6 +9,7 @@ using CodeCadetsAPI.Data;
 using CodeCadetsAPI.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace CodeCadetsAPI.Endpoints
 {
@@ -28,7 +29,7 @@ namespace CodeCadetsAPI.Endpoints
 
         // GET: Users
         [HttpGet("all")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "Admin")]
         public IActionResult All()
         {
             return Ok(_context.Users.ToList());
@@ -86,7 +87,7 @@ namespace CodeCadetsAPI.Endpoints
             string hashPassword = Secrecy.Hash(person.Password);
             if ((!string.IsNullOrEmpty(hashPassword)) || (!string.IsNullOrEmpty(person.Email)))
             {
-                dynamic token;
+                string token;
                 var user = (from u in _context.Users
                             where u.Email == person.Email
                             && u.Password == person.Password
@@ -95,7 +96,7 @@ namespace CodeCadetsAPI.Endpoints
                 if (user != null)
                 {
                     _context.Users.Add(user);
-                    token = _jwtSetup.CreateToken(user);
+                    token = JWTSetup.Tokens(_jwtSetup.CreateToken(user));
                     return Ok(token);
                 }
                 else
@@ -111,7 +112,7 @@ namespace CodeCadetsAPI.Endpoints
         [HttpPost("admin/signup")]
         [Consumes("application/json")]
         [Produces("application/json")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "Admin")]
         public IActionResult SignUpAdmin([FromBody] Register reg)
         {
             if ((string.IsNullOrEmpty(reg.Email)) || (string.IsNullOrEmpty(reg.Password)) || (string.IsNullOrEmpty(reg.ConfirmPassword)))
@@ -153,11 +154,10 @@ namespace CodeCadetsAPI.Endpoints
         [HttpPut("update")]
         [Consumes("application/json")]
         [Produces("application/json")]
-        [Authorize]
-        public IActionResult Update([FromBody] string email, [FromBody] string newEmail, [FromBody] string phoneNumber)
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        public IActionResult Update([FromBody] string newEmail, [FromBody] string phoneNumber)
         {
-            if (UserExists(email))
-            {
+            
                 var user = new User
                 {
                     Email = newEmail,
@@ -167,17 +167,13 @@ namespace CodeCadetsAPI.Endpoints
                 try
                 {
                     _context.SaveChanges();
-                    return Ok(_jwtSetup.CreateToken(user));
+                    return Ok(JWTSetup.Tokens(_jwtSetup.CreateToken(user)));
                 }
                 catch (Exception ex)
                 {
                     System.Diagnostics.Debug.WriteLine(ex);
                     return BadRequest("Could not update changes");
                 }
-            }
-            else
-            {
-                return BadRequest("User not logged in");
             }
         }
     }
@@ -192,7 +188,6 @@ namespace CodeCadetsAPI.Endpoints
 
 
     }
-}
 
 public class Person
 {
